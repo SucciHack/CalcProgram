@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(199, 189, 189);
+}
+#display{
+    background-color: rgb(158, 157, 157);
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    overflow: hidden;
+}
+input::placeholder{
+    color: white;
+}
+#display:focus{
+    outline: none;
+}
+#calculator{
+    background-color: rgb(133, 133, 133);
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+button{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+button:hover{
+    background-color: rgb(88, 88, 88);
+}
+button:active{
+    background-color: rgb(151, 151, 151);
+}
+.operations{
+    background-color: rgb(238, 160, 15);
+}
+.operations:hover{
+    background-color: rgb(223, 157, 36);
+}
+.operations:active{
+    background-color: rgb(223, 176, 89);
+}
